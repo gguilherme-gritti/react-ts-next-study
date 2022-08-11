@@ -18,7 +18,7 @@ const getData = async () => {
       repositories: repositoryNames,
       date: new Date().toISOString(),
     },
-    revalidate: 5, // 5 Segundos
+    revalidate: 5 * 60 * 60, // 5 Segundos
   };
 };
 
